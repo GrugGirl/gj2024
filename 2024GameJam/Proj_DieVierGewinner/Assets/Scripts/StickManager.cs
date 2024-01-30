@@ -24,16 +24,16 @@ public class StickManager : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.GetComponent<Stickable>() != null) {
-            collision.transform.SetParent(gameObject.transform);
-            Destroy(collision.gameObject.GetComponent<Collider>());
-            Destroy(collision.gameObject.GetComponent<Rigidbody>());
+    private void OnCollisionEnter(Collision col) {
+        if (col.gameObject.GetComponent<Stickable>() != null) {
+            col.transform.SetParent(gameObject.transform);
+            Destroy(col.gameObject.GetComponent<Collider>());
+            Destroy(col.gameObject.GetComponent<Rigidbody>());
             Sticks++;
         }
     }
 
     void OnSetSticks(int n) {
-        col.radius += n * 0.1f;
+        col.radius += 0.0005f;
     }
 }
