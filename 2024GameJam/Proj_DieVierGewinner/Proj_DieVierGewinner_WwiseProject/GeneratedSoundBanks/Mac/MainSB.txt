@@ -1,0 +1,4 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3164414786	player_rollingMov			\Default Work Unit\Player\player_rollingMov	
+	4198308420	enemies_movment			\Default Work Unit\Enemies\enemies_movment	
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B5A110C1-DEBE-41D7-AD7A-0D1FBA8A432E}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{B5A110C1-DEBE-41D7-AD7A-0D1FBA8A432E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Player" ID="{A5B789D5-EBF3-49B8-8F08-B3099AF127B6}" ShortID="644906559">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="player_rollingMov" ID="{53E9E6CE-F635-4F10-B8B9-873D9F34F3DA}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Enemies" ID="{AA92C842-F5C3-4F56-824E-A8C076C78761}" ShortID="432167042">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="enemies_movment" ID="{3A9FF235-E471-40B6-9B11-C930CD8411EC}"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
