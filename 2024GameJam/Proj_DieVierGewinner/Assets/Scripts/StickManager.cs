@@ -49,6 +49,6 @@ public class StickManager : MonoBehaviour
     }
 
     void OnSetSticks(int n) {
-        col.radius += 0.0005f;
+        col.radius += 0.00125f;
     }
 }
