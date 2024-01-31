@@ -5,12 +5,13 @@ using UnityEngine;
 
 public class StickManager : MonoBehaviour
 {
+    List<GameObject> sticks = new List<GameObject>();
     private SphereCollider col;
-    int sticks;
-    int Sticks {
-        get { return sticks; }
+    int stickNum;
+    int StickNum {
+        get { return stickNum; }
         set {
-            sticks = value;
+            stickNum = value;
             OnSetSticks(value);
         }
     }
@@ -25,11 +26,25 @@ public class StickManager : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision col) {
-        if (col.gameObject.GetComponent<Stickable>() != null) {
+        GameObject g = col.gameObject;
+        Stickable s = new Stickable();
+
+        if (g.GetComponent<Stickable>() != null) {
+            s = g.GetComponent<Stickable>();
+        } else {
+            return;
+        }
+
+        if (s.DoesDamage) {
+            GameObject temp = sticks[sticks.Count];
+            sticks.RemoveAt(sticks.Count);
+            Destroy(temp);
+        } else if (s.DoesDamage is false) {
             col.transform.SetParent(gameObject.transform);
-            Destroy(col.gameObject.GetComponent<Collider>());
-            Destroy(col.gameObject.GetComponent<Rigidbody>());
-            Sticks++;
+            Destroy(g.GetComponent<Collider>());
+            Destroy(g.GetComponent<Rigidbody>());
+            StickNum++;
+            sticks.Add(g);
         }
     }
 

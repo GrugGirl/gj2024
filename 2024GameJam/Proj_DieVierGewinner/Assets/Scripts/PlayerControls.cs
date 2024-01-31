@@ -18,17 +18,8 @@ public class PlayerControls : MonoBehaviour {
     }
 
     void Update() {
-        Vector3 inp = new Vector3 (AscertainInputQuantities().Item1, 0, AscertainInputQuantities().Item2);
-        ModifyNewtonianForces (inp);
-    }
-
-    (float, float) AscertainInputQuantities() {
-        float sideAx = Input.GetAxis("Horizontal") * xMovSpeed * Time.deltaTime;
-        float forwAx = Input.GetAxis("Vertical") * zMovSpeed * Time.deltaTime;
-        return (sideAx, forwAx);
-    }
-
-    void ModifyNewtonianForces(Vector3 i) {
-        rb.AddForce(i);
+        float sideAx = -1 * Input.GetAxis("Horizontal") * xMovSpeed * Time.deltaTime;
+        Vector3 inp = new Vector3 (0, 0, sideAx);
+        rb.AddForce(inp, ForceMode.Acceleration);
     }
 }

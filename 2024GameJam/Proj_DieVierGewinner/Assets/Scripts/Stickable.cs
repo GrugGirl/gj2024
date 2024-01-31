@@ -7,5 +7,6 @@ interface IStickable {
 }
 
 public class Stickable : MonoBehaviour, IStickable {
-
+    public bool DoesDamage;
 }
+  
