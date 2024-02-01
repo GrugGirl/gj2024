@@ -36,6 +36,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="player_die" ID="{23A657AA-6F0C-4498-B583-90768D838CEE}">
+							<ChildrenList>
+								<Action Name="" ID="{93903AB8-C534-4574-B190-090362E47A95}" ShortID="409353559">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Die" ID="{EA667F29-473C-45AE-AB14-D64F3E850685}" WorkUnitID="{3F17BEFB-B0F1-4753-A68A-73A0BF513521}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enemies" ID="{AA92C842-F5C3-4F56-824E-A8C076C78761}" ShortID="432167042">
@@ -45,6 +56,36 @@
 					</PropertyList>
 					<ChildrenList>
 						<Event Name="enemies_movment" ID="{3A9FF235-E471-40B6-9B11-C930CD8411EC}"/>
+						<Event Name="enemies_die" ID="{CD42207A-D669-4192-AFF8-878E4864D360}">
+							<ChildrenList>
+								<Action Name="" ID="{3512BD33-4949-4BE9-93C8-E839E4C55D8E}" ShortID="604412740">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Die" ID="{21E4E790-DBDE-4ACB-88E1-E53DE11C8494}" WorkUnitID="{3F17BEFB-B0F1-4753-A68A-73A0BF513521}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{5940119E-0091-4C50-8229-85C50CA96646}" ShortID="804415410">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="UI_select" ID="{C6637630-6D14-4E56-AB02-157B727951D9}">
+							<ChildrenList>
+								<Action Name="" ID="{5D9329F6-212B-49BF-B35D-0C7A7B627C17}" ShortID="684782361">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Select" ID="{6AF551B6-ED87-49A3-BD64-D053548DB607}" WorkUnitID="{3F17BEFB-B0F1-4753-A68A-73A0BF513521}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

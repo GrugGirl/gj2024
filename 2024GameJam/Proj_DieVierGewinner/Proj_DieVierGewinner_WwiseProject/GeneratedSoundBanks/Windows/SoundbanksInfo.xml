@@ -9,9 +9,23 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1328360421" Type="User" Language="SFX" Hash="{4EB64CBD-5EFF-E5D4-44AA-6E15EF3F8B2B}">
+		<SoundBank Id="1328360421" Type="User" Language="SFX" Hash="{60B41329-9064-29FD-7C38-273B7F3F13B4}">
 			<ShortName>MainSB</ShortName>
 			<Path>MainSB.bnk</Path>
+			<Media>
+				<File Id="251141284" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Enemies\quetsch.wav</ShortName>
+					<CachePath>SFX/Enemies/quetsch_1A520E20.wem</CachePath>
+				</File>
+				<File Id="331592217" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI\UI_select.wav</ShortName>
+					<CachePath>SFX/UI/UI_select_1A520E20.wem</CachePath>
+				</File>
+				<File Id="599967267" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>deathSound.wav</ShortName>
+					<CachePath>SFX/deathSound_1A520E20.wem</CachePath>
+				</File>
+			</Media>
 			<Plugins>
 				<Custom>
 					<Plugin Id="517724009" Name="Tone Generator" LibName="Wwise Tone Generator" LibId="6684674"/>
@@ -19,7 +33,17 @@
 				</Custom>
 			</Plugins>
 			<Events>
+				<Event Id="2646462876" Name="enemies_die" DurationType="OneShot" DurationMin="0.34414965" DurationMax="0.34414965">
+					<MediaRefs>
+						<MediaRef Id="251141284"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4198308420" Name="enemies_movment" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1542330065" Name="player_die" DurationType="OneShot" DurationMin="0.7257898" DurationMax="0.7257898">
+					<MediaRefs>
+						<MediaRef Id="599967267"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="162136643" Name="player_rollingMov_start" DurationType="Infinite">
 					<PluginRefs>
 						<Custom>
@@ -29,6 +53,11 @@
 					</PluginRefs>
 				</Event>
 				<Event Id="3305766081" Name="player_rollingMov_stop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2774129122" Name="UI_select" DurationType="OneShot" DurationMin="0.13138323" DurationMax="0.13138323">
+					<MediaRefs>
+						<MediaRef Id="331592217"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="1833811084" Name="Player_velocity"/>
@@ -51,5 +80,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4280BB9D-5D94-B78F-3A4F-8B05286CA2AF}</FileHash>
+	<FileHash>{FC819E4D-77BA-0614-7B5C-A9764ACBDCFD}</FileHash>
 </SoundBanksInfo>
