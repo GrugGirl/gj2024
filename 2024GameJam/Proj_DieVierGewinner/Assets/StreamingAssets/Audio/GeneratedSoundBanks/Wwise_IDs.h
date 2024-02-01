@@ -13,11 +13,12 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ENEMIES_CHANGESTATE = 1558404081U;
         static const AkUniqueID ENEMIES_DIE = 2646462876U;
-        static const AkUniqueID ENEMIES_MOVMENT = 4198308420U;
         static const AkUniqueID PLAYER_DIE = 1542330065U;
         static const AkUniqueID PLAYER_ROLLINGMOV_START = 162136643U;
         static const AkUniqueID PLAYER_ROLLINGMOV_STOP = 3305766081U;
+        static const AkUniqueID UI_DENIAL = 767827579U;
         static const AkUniqueID UI_SELECT = 2774129122U;
     } // namespace EVENTS
 

@@ -9,10 +9,14 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1328360421" Type="User" Language="SFX" Hash="{60B41329-9064-29FD-7C38-273B7F3F13B4}">
+		<SoundBank Id="1328360421" Type="User" Language="SFX" Hash="{B808F797-271E-D550-299F-2DD0E669E886}">
 			<ShortName>MainSB</ShortName>
 			<Path>MainSB.bnk</Path>
 			<Media>
+				<File Id="135830918" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI\ui_denial.wav</ShortName>
+					<CachePath>SFX/UI/ui_denial_1A520E20.wem</CachePath>
+				</File>
 				<File Id="251141284" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Enemies\quetsch.wav</ShortName>
 					<CachePath>SFX/Enemies/quetsch_1A520E20.wem</CachePath>
@@ -25,6 +29,10 @@
 					<ShortName>deathSound.wav</ShortName>
 					<CachePath>SFX/deathSound_1A520E20.wem</CachePath>
 				</File>
+				<File Id="694406505" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Enemies\enemies_changeState.wav</ShortName>
+					<CachePath>SFX/Enemies/enemies_changeState_1A520E20.wem</CachePath>
+				</File>
 			</Media>
 			<Plugins>
 				<Custom>
@@ -33,12 +41,16 @@
 				</Custom>
 			</Plugins>
 			<Events>
+				<Event Id="1558404081" Name="enemies_changeState" DurationType="OneShot" DurationMin="1.0841724" DurationMax="1.0841724">
+					<MediaRefs>
+						<MediaRef Id="694406505"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2646462876" Name="enemies_die" DurationType="OneShot" DurationMin="0.34414965" DurationMax="0.34414965">
 					<MediaRefs>
 						<MediaRef Id="251141284"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4198308420" Name="enemies_movment" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1542330065" Name="player_die" DurationType="OneShot" DurationMin="0.7257898" DurationMax="0.7257898">
 					<MediaRefs>
 						<MediaRef Id="599967267"/>
@@ -53,6 +65,11 @@
 					</PluginRefs>
 				</Event>
 				<Event Id="3305766081" Name="player_rollingMov_stop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="767827579" Name="UI_Denial" DurationType="OneShot" DurationMin="0.5035374" DurationMax="0.5035374">
+					<MediaRefs>
+						<MediaRef Id="135830918"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2774129122" Name="UI_select" DurationType="OneShot" DurationMin="0.13138323" DurationMax="0.13138323">
 					<MediaRefs>
 						<MediaRef Id="331592217"/>
@@ -80,5 +97,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FC819E4D-77BA-0614-7B5C-A9764ACBDCFD}</FileHash>
+	<FileHash>{6A84A9D5-5C8E-1D87-1DFC-9525DFA11168}</FileHash>
 </SoundBanksInfo>

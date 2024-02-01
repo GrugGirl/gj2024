@@ -1,10 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
 	162136643	player_rollingMov_start			\Default Work Unit\Player\player_rollingMov_start	
+	767827579	UI_Denial			\Default Work Unit\UI\UI_Denial	
 	1542330065	player_die			\Default Work Unit\Player\player_die	
+	1558404081	enemies_changeState			\Default Work Unit\Enemies\enemies_changeState	
 	2646462876	enemies_die			\Default Work Unit\Enemies\enemies_die	
 	2774129122	UI_select			\Default Work Unit\UI\UI_select	
 	3305766081	player_rollingMov_stop			\Default Work Unit\Player\player_rollingMov_stop	
-	4198308420	enemies_movment			\Default Work Unit\Enemies\enemies_movment	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1833811084	Player_velocity			\Default Work Unit\Player\Player_velocity	
@@ -14,7 +15,9 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	537737653	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement_Rolling\New Sound SFX_01\Tone Generator	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	135830918	ui_denial	D:\Git\gj24\2024GameJam\Proj_DieVierGewinner\Proj_DieVierGewinner_WwiseProject\.cache\Mac\SFX\UI\ui_denial_1A520E20.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Denial\ui_denial		8856
 	251141284	quetsch	D:\Git\gj24\2024GameJam\Proj_DieVierGewinner\Proj_DieVierGewinner_WwiseProject\.cache\Mac\SFX\Enemies\quetsch_1A520E20.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Die\quetsch		4170
 	331592217	UI_select	D:\Git\gj24\2024GameJam\Proj_DieVierGewinner\Proj_DieVierGewinner_WwiseProject\.cache\Mac\SFX\UI\UI_select_1A520E20.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Select\UI_select		2758
 	599967267	deathSound	D:\Git\gj24\2024GameJam\Proj_DieVierGewinner\Proj_DieVierGewinner_WwiseProject\.cache\Mac\SFX\deathSound_1A520E20.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Die\deathSound		4300
+	694406505	enemies_changeState	D:\Git\gj24\2024GameJam\Proj_DieVierGewinner\Proj_DieVierGewinner_WwiseProject\.cache\Mac\SFX\Enemies\enemies_changeState_1A520E20.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\ChangeState\enemies_changeState		14308
 

@@ -55,13 +55,23 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Event Name="enemies_movment" ID="{3A9FF235-E471-40B6-9B11-C930CD8411EC}"/>
 						<Event Name="enemies_die" ID="{CD42207A-D669-4192-AFF8-878E4864D360}">
 							<ChildrenList>
 								<Action Name="" ID="{3512BD33-4949-4BE9-93C8-E839E4C55D8E}" ShortID="604412740">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Die" ID="{21E4E790-DBDE-4ACB-88E1-E53DE11C8494}" WorkUnitID="{3F17BEFB-B0F1-4753-A68A-73A0BF513521}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="enemies_changeState" ID="{752903F1-5888-4E31-B36B-811ED2F02E23}">
+							<ChildrenList>
+								<Action Name="" ID="{A0792662-EF11-45B6-8F0D-90591367AC1B}" ShortID="10038864">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ChangeState" ID="{260B316C-4326-42AC-9AFA-DA44FE90A9E5}" WorkUnitID="{3F17BEFB-B0F1-4753-A68A-73A0BF513521}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -81,6 +91,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Select" ID="{6AF551B6-ED87-49A3-BD64-D053548DB607}" WorkUnitID="{3F17BEFB-B0F1-4753-A68A-73A0BF513521}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Denial" ID="{12D71640-768F-4889-B464-B77D8A8F81A5}">
+							<ChildrenList>
+								<Action Name="" ID="{077DF371-3083-404A-A13F-A8B3D034614D}" ShortID="566591309">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Denial" ID="{7BBB5D76-9937-4D95-A905-2AB8600B8CDB}" WorkUnitID="{3F17BEFB-B0F1-4753-A68A-73A0BF513521}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
