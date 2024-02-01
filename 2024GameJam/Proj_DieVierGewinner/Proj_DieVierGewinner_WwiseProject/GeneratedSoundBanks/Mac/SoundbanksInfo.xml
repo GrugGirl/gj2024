@@ -9,15 +9,32 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1328360421" Type="User" Language="SFX" Hash="{F45B8DC5-37A8-9127-FA2C-5FE46F0D4F19}">
+		<SoundBank Id="1328360421" Type="User" Language="SFX" Hash="{4EB64CBD-5EFF-E5D4-44AA-6E15EF3F8B2B}">
 			<ShortName>MainSB</ShortName>
 			<Path>MainSB.bnk</Path>
+			<Plugins>
+				<Custom>
+					<Plugin Id="517724009" Name="Tone Generator" LibName="Wwise Tone Generator" LibId="6684674"/>
+					<Plugin Id="537737653" Name="Tone Generator" LibName="Wwise Tone Generator" LibId="6684674"/>
+				</Custom>
+			</Plugins>
 			<Events>
 				<Event Id="4198308420" Name="enemies_movment" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3164414786" Name="player_rollingMov" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="162136643" Name="player_rollingMov_start" DurationType="Infinite">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="517724009"/>
+							<PluginRef Id="537737653"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="3305766081" Name="player_rollingMov_stop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="1833811084" Name="Player_velocity"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F56A610C-C7C4-F874-B68B-7ADDF94EBB7A}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E47C0B91-6822-71F2-6158-F50BC5CD2F5A}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -29,7 +46,10 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="1833811084" Name="Player_velocity"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{514887E0-5A27-3FC3-3EBF-814C193919A9}</FileHash>
+	<FileHash>{A05F64A9-0D30-F22E-302C-C02E1F3F1FF1}</FileHash>
 </SoundBanksInfo>

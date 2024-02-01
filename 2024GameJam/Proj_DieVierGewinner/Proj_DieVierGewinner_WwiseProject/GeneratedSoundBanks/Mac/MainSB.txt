@@ -1,4 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
-	3164414786	player_rollingMov			\Default Work Unit\Player\player_rollingMov	
+	162136643	player_rollingMov_start			\Default Work Unit\Player\player_rollingMov_start	
+	3305766081	player_rollingMov_stop			\Default Work Unit\Player\player_rollingMov_stop	
 	4198308420	enemies_movment			\Default Work Unit\Enemies\enemies_movment	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1833811084	Player_velocity			\Default Work Unit\Player\Player_velocity	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	517724009	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement_Rolling\New Sound SFX_02\Tone Generator	
+	537737653	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement_Rolling\New Sound SFX_01\Tone Generator	
 

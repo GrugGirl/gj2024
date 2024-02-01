@@ -9,7 +9,33 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Event Name="player_rollingMov" ID="{53E9E6CE-F635-4F10-B8B9-873D9F34F3DA}"/>
+						<Event Name="player_rollingMov_start" ID="{53E9E6CE-F635-4F10-B8B9-873D9F34F3DA}">
+							<ChildrenList>
+								<Action Name="" ID="{521AAF53-FC2D-40FB-B0D9-8A46F9E33B9A}" ShortID="250497467">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Movement_Rolling" ID="{41B8E715-1B92-4B64-A01F-9C1A0487FF76}" WorkUnitID="{3F17BEFB-B0F1-4753-A68A-73A0BF513521}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="player_rollingMov_stop" ID="{A5E75129-0F55-451E-9862-24829F790EA6}">
+							<ChildrenList>
+								<Action Name="" ID="{6ED14E37-35E4-43EA-B8FF-35985D9453AB}" ShortID="657962360">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Movement_Rolling" ID="{41B8E715-1B92-4B64-A01F-9C1A0487FF76}" WorkUnitID="{3F17BEFB-B0F1-4753-A68A-73A0BF513521}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enemies" ID="{AA92C842-F5C3-4F56-824E-A8C076C78761}" ShortID="432167042">

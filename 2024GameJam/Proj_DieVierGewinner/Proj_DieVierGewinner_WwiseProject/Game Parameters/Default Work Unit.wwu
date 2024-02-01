@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4D476356-D458-47CC-9F06-E9CDE84D51E4}" SchemaVersion="110">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{4D476356-D458-47CC-9F06-E9CDE84D51E4}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4D476356-D458-47CC-9F06-E9CDE84D51E4}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Player" ID="{5B80AC6E-32FF-42E1-B6CF-AEF4960319D3}" ShortID="727256403">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<GameParameter Name="Player_velocity" ID="{020D9B12-CFC6-46C9-AA26-9ECCD8273B25}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

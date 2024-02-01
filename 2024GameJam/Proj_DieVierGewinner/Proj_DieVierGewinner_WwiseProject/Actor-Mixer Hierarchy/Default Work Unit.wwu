@@ -10,6 +10,24 @@
 					</PropertyList>
 					<ChildrenList>
 						<BlendContainer Name="Movement_Rolling" ID="{41B8E715-1B92-4B64-A01F-9C1A0487FF76}" ShortID="16139403">
+							<PropertyList>
+								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1440</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{57372C6F-B2C2-4D33-9071-F79EAF12B2B0}"/>
@@ -18,6 +36,223 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45BD26A2-E5FE-4EA4-96E4-E232E8CC591B}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="rolling02" ID="{E16B4627-7F70-4D94-B1D3-3AC2FDDEFE5C}" ShortID="258172866">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-2400</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{57372C6F-B2C2-4D33-9071-F79EAF12B2B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45BD26A2-E5FE-4EA4-96E4-E232E8CC591B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="rolling02" ID="{FB34AED8-C93D-4F93-84E8-0AF4557E718F}">
+											<Language>SFX</Language>
+											<AudioFile>Player\rolling02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="378528470"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="rolling02" ID="{FB34AED8-C93D-4F93-84E8-0AF4557E718F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="rolling01" ID="{61BE26A9-2AC0-4A47-BDEB-014EE16493F4}" ShortID="853822240">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-2400</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{57372C6F-B2C2-4D33-9071-F79EAF12B2B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45BD26A2-E5FE-4EA4-96E4-E232E8CC591B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="rolling01" ID="{FFA047F9-0BDB-448A-BC4F-31A2D985D5DE}">
+											<Language>SFX</Language>
+											<AudioFile>rolling01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="15961843"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="rolling01" ID="{FFA047F9-0BDB-448A-BC4F-31A2D985D5DE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="New Sound SFX" ID="{B1B3EB7E-72B5-4840-8FCD-068CB87A5E6C}" ShortID="131637076">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-2400</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{57372C6F-B2C2-4D33-9071-F79EAF12B2B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45BD26A2-E5FE-4EA4-96E4-E232E8CC591B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Tone Generator" ID="{18F2C600-597B-4FFC-8E40-76BB16FDCE82}" ShortID="373291562" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+											<PropertyList>
+												<Property Name="WaveType" Type="int32" Value="4"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Tone Generator" ID="{18F2C600-597B-4FFC-8E40-76BB16FDCE82}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="New Sound SFX_01" ID="{5D5EF5F9-D747-463D-B83E-B6816C832839}" ShortID="4894932">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{57372C6F-B2C2-4D33-9071-F79EAF12B2B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45BD26A2-E5FE-4EA4-96E4-E232E8CC591B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Tone Generator" ID="{E7500A7B-E839-45B0-A238-DEBA7D3EB22A}" ShortID="537737653" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+											<PropertyList>
+												<Property Name="StartFreq" Type="Real32" Value="52"/>
+												<Property Name="StopFreq" Type="Real32" Value="110"/>
+												<Property Name="WaveType" Type="int32" Value="2"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Tone Generator" ID="{E7500A7B-E839-45B0-A238-DEBA7D3EB22A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="New Sound SFX_02" ID="{F814985F-E15F-4B4F-8880-E73425CFE153}" ShortID="159957954">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{57372C6F-B2C2-4D33-9071-F79EAF12B2B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45BD26A2-E5FE-4EA4-96E4-E232E8CC591B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Tone Generator" ID="{8BE1F011-3CED-406B-A749-22EA8B2F3E84}" ShortID="517724009" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+											<PropertyList>
+												<Property Name="StartFreq" Type="Real32" Value="52"/>
+												<Property Name="StopFreq" Type="Real32" Value="70"/>
+												<Property Name="WaveType" Type="int32" Value="2"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Tone Generator" ID="{8BE1F011-3CED-406B-A749-22EA8B2F3E84}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{A37B485B-16D6-4494-9DE4-391B469218D1}" ShortID="502625199">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Player_velocity" ID="{020D9B12-CFC6-46C9-AA26-9ECCD8273B25}" WorkUnitID="{4D476356-D458-47CC-9F06-E9CDE84D51E4}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{E5697224-F732-4918-9E4A-D01EFDD21902}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-4800</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.01</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>1048</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 						</BlendContainer>
 					</ChildrenList>
 				</Folder>
@@ -46,6 +281,40 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45BD26A2-E5FE-4EA4-96E4-E232E8CC591B}"/>
 								</Reference>
 							</ReferenceList>
+						</BlendContainer>
+						<BlendContainer Name="Die" ID="{21E4E790-DBDE-4ACB-88E1-E53DE11C8494}" ShortID="739482302">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{57372C6F-B2C2-4D33-9071-F79EAF12B2B0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45BD26A2-E5FE-4EA4-96E4-E232E8CC591B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="quetsch" ID="{CCE9FB33-704E-4410-ABA4-35650B4B34FF}" ShortID="404895359">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{57372C6F-B2C2-4D33-9071-F79EAF12B2B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45BD26A2-E5FE-4EA4-96E4-E232E8CC591B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="quetsch" ID="{A7DED873-F672-4F6E-91D6-5A439FCDE9D7}">
+											<Language>SFX</Language>
+											<AudioFile>Enemies\quetsch.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="251141284"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="quetsch" ID="{A7DED873-F672-4F6E-91D6-5A439FCDE9D7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>
 				</Folder>

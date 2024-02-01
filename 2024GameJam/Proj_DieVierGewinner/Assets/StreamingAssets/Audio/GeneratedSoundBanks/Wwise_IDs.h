@@ -14,8 +14,14 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID ENEMIES_MOVMENT = 4198308420U;
-        static const AkUniqueID PLAYER_ROLLINGMOV = 3164414786U;
+        static const AkUniqueID PLAYER_ROLLINGMOV_START = 162136643U;
+        static const AkUniqueID PLAYER_ROLLINGMOV_STOP = 3305766081U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID PLAYER_VELOCITY = 1833811084U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
