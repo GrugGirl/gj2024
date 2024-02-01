@@ -1,8 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	162136643	player_rollingMov_start			\Default Work Unit\Player\player_rollingMov_start	
 	767827579	UI_Denial			\Default Work Unit\UI\UI_Denial	
+	892730858	music_soundtrack_stop			\Default Work Unit\Music\music_soundtrack_stop	
 	1542330065	player_die			\Default Work Unit\Player\player_die	
 	1558404081	enemies_changeState			\Default Work Unit\Enemies\enemies_changeState	
+	2614888626	music_soundtrack_start			\Default Work Unit\Music\music_soundtrack_start	
 	2646462876	enemies_die			\Default Work Unit\Enemies\enemies_die	
 	2774129122	UI_select			\Default Work Unit\UI\UI_select	
 	3305766081	player_rollingMov_stop			\Default Work Unit\Player\player_rollingMov_stop	
@@ -16,6 +18,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	135830918	ui_denial	D:\Git\gj24\2024GameJam\Proj_DieVierGewinner\Proj_DieVierGewinner_WwiseProject\.cache\Windows\SFX\UI\ui_denial_1A520E20.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Denial\ui_denial		8856
+	163515871	FifisSoundtrack	D:\Git\gj24\2024GameJam\Proj_DieVierGewinner\Proj_DieVierGewinner_WwiseProject\.cache\Windows\SFX\Music\FifisSoundtrack_1CCDD76A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Soundtrack\FifisSoundtrack		347904
 	251141284	quetsch	D:\Git\gj24\2024GameJam\Proj_DieVierGewinner\Proj_DieVierGewinner_WwiseProject\.cache\Windows\SFX\Enemies\quetsch_1A520E20.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Die\quetsch		4170
 	331592217	UI_select	D:\Git\gj24\2024GameJam\Proj_DieVierGewinner\Proj_DieVierGewinner_WwiseProject\.cache\Windows\SFX\UI\UI_select_1A520E20.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Select\UI_select		2758
 	599967267	deathSound	D:\Git\gj24\2024GameJam\Proj_DieVierGewinner\Proj_DieVierGewinner_WwiseProject\.cache\Windows\SFX\deathSound_1A520E20.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Die\deathSound		4300

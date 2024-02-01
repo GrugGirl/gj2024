@@ -15,6 +15,8 @@ namespace AK
     {
         static const AkUniqueID ENEMIES_CHANGESTATE = 1558404081U;
         static const AkUniqueID ENEMIES_DIE = 2646462876U;
+        static const AkUniqueID MUSIC_SOUNDTRACK_START = 2614888626U;
+        static const AkUniqueID MUSIC_SOUNDTRACK_STOP = 892730858U;
         static const AkUniqueID PLAYER_DIE = 1542330065U;
         static const AkUniqueID PLAYER_ROLLINGMOV_START = 162136643U;
         static const AkUniqueID PLAYER_ROLLINGMOV_STOP = 3305766081U;

@@ -454,6 +454,54 @@
 						</BlendContainer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Music" ID="{6924DC33-BEC6-457E-8F02-9ACD42E0CDC6}" ShortID="239338036">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<BlendContainer Name="Soundtrack" ID="{1810D0EA-F7E3-4988-A0E7-3849A54B0C84}" ShortID="478958130">
+							<PropertyList>
+								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="VorbisConv" ID="{3641F1B6-67D3-4C86-AE43-E60346BA3D0A}" WorkUnitID="{57372C6F-B2C2-4D33-9071-F79EAF12B2B0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45BD26A2-E5FE-4EA4-96E4-E232E8CC591B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FifisSoundtrack" ID="{4E4F45CC-13B3-42AA-A83C-43F38E0BB0D6}" ShortID="286330871">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{57372C6F-B2C2-4D33-9071-F79EAF12B2B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45BD26A2-E5FE-4EA4-96E4-E232E8CC591B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FifisSoundtrack" ID="{15483498-7780-4E91-AFA0-905A59DBC336}">
+											<Language>SFX</Language>
+											<AudioFile>Music\FifisSoundtrack.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="163515871"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FifisSoundtrack" ID="{15483498-7780-4E91-AFA0-905A59DBC336}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

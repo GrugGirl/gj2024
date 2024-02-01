@@ -9,6 +9,7 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ObjectInclusionList>
+						<ObjectRef Name="Music" ID="{0AA8F7A6-210C-48DA-B704-EBA2F51F52AD}" WorkUnitID="{B5A110C1-DEBE-41D7-AD7A-0D1FBA8A432E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player" ID="{A5B789D5-EBF3-49B8-8F08-B3099AF127B6}" WorkUnitID="{B5A110C1-DEBE-41D7-AD7A-0D1FBA8A432E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI" ID="{5940119E-0091-4C50-8229-85C50CA96646}" WorkUnitID="{B5A110C1-DEBE-41D7-AD7A-0D1FBA8A432E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Enemies" ID="{AA92C842-F5C3-4F56-824E-A8C076C78761}" WorkUnitID="{B5A110C1-DEBE-41D7-AD7A-0D1FBA8A432E}" Origin="Manual" Filter="7"/>

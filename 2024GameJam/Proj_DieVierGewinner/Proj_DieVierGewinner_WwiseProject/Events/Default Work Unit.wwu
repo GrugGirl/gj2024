@@ -109,6 +109,39 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Music" ID="{0AA8F7A6-210C-48DA-B704-EBA2F51F52AD}" ShortID="673883279">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="music_soundtrack_start" ID="{5B04B967-5596-43FB-B83C-2A11482AFA43}">
+							<ChildrenList>
+								<Action Name="" ID="{98507775-3DF3-4D45-A6A0-F558BB863A43}" ShortID="691534607">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Soundtrack" ID="{1810D0EA-F7E3-4988-A0E7-3849A54B0C84}" WorkUnitID="{3F17BEFB-B0F1-4753-A68A-73A0BF513521}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="music_soundtrack_stop" ID="{FCF33D78-045A-4E53-B9DC-1C64D1847765}">
+							<ChildrenList>
+								<Action Name="" ID="{EEE29622-F949-42DD-B76C-D828E01070CF}" ShortID="813297389">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Soundtrack" ID="{1810D0EA-F7E3-4988-A0E7-3849A54B0C84}" WorkUnitID="{3F17BEFB-B0F1-4753-A68A-73A0BF513521}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

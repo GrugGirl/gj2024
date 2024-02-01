@@ -9,13 +9,17 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1328360421" Type="User" Language="SFX" Hash="{B808F797-271E-D550-299F-2DD0E669E886}">
+		<SoundBank Id="1328360421" Type="User" Language="SFX" Hash="{AF2B50B7-25CC-21E6-B958-E2C503BD151C}">
 			<ShortName>MainSB</ShortName>
 			<Path>MainSB.bnk</Path>
 			<Media>
 				<File Id="135830918" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI\ui_denial.wav</ShortName>
 					<CachePath>SFX/UI/ui_denial_1A520E20.wem</CachePath>
+				</File>
+				<File Id="163515871" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music\FifisSoundtrack.wav</ShortName>
+					<CachePath>SFX/Music/FifisSoundtrack_1CCDD76A.wem</CachePath>
 				</File>
 				<File Id="251141284" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Enemies\quetsch.wav</ShortName>
@@ -51,6 +55,12 @@
 						<MediaRef Id="251141284"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2614888626" Name="music_soundtrack_start" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="163515871"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="892730858" Name="music_soundtrack_stop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1542330065" Name="player_die" DurationType="OneShot" DurationMin="0.7257898" DurationMax="0.7257898">
 					<MediaRefs>
 						<MediaRef Id="599967267"/>
@@ -97,5 +107,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6A84A9D5-5C8E-1D87-1DFC-9525DFA11168}</FileHash>
+	<FileHash>{4BAF7926-FB75-8DF7-C3DD-8C23EEB0732B}</FileHash>
 </SoundBanksInfo>
